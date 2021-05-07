@@ -1,0 +1,46 @@
+:root{
+    --theme:#308e46;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.bg-theme{
+    background-color:#308e46;
+}
+.text-theme{
+    color:#308e46;
+}
+header{
+    align-items: center;
+    padding: 10px;
+}
+.large{
+    font-size: larger;
+}
+.form{
+    width: 300px;
+}
+.form-section{
+    background-image:url(https://videohive.img.customer.envatousercontent.com/files/150469715/sightsignal-dynamicdarkcrystalsloop1IMG.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=ab141b41dfd97d47ee349da7efecf5bc);
+}
+.check-text{
+    font-size: 8pt;
+}
+.form-text-area{
+    border-left:6px solid #308e46;
+}
+.card{
+    height: 400px;
+    width: 90%;
+    margin:auto;
+}
+.cta-card{
+    position: absolute;
+    top: 20px;
+}
+@media screen and (max-width: 350px) {
+    .cta-card {
+        position: relative;
+        margin:auto;
+    }
+}
