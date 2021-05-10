@@ -1,5 +1,9 @@
 :root{
     --theme:#308e46;
+    animation-name: swip-swop-text;
+    animation-duration: 15s;
+    animation-delay: 10s;
+    animation-iteration-count: 2;
 }
 body{
     font-family: 'Open Sans', sans-serif;
