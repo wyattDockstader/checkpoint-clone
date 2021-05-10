@@ -15,46 +15,66 @@
 </head>
 
 <body>
-    <header class="bg-theme d-flex">
-        <h1 class="mdi mdi-diamond-stone text-white ml-4">
-        </h1>
-        <h2 class="text-white">LOREM IPSUM</h2>
+    <header class="container-fluid bg-theme sticky-top">
+        <div class="row">
+            <Div class="col-12 col-sm-6 d-flex align-items-center">
+                <h1 class="mdi mdi-diamond-stone text-white ml-4">
+                </h1>
+                <h2 class="text-white">LOREM IPSUM</h2>
+            </div>
+            <div class="btn-box col-12 col-sm-6 d-flex justify-content-end">
+                <button onclick="scrollWin(0,0)" type="button" class="btn btn-theme text-white border-white m-1">Home
+                </button>
+                <button onclick="scrollWin(0,1500)" type="button"
+                    class="btn btn-theme text-white border-white m-1">Testimonials
+                </button>
+                <button onclick="scrollWin(0,1850)" type="button" class="btn btn-theme text-white border-white m-1">Not
+                    a
+                    white box
+                </button>
+            </div>
+        </div>
     </header>
     <main>
-        <section class="container-fluid form-section">
-            <div class="row p-5">
-                <form class="col-12 col-sm-5 form border p-3 bg-white">
-                    <div class="name bg-white">
-                        <label class="text-theme">LESS SUBTLE HEADING</Label>
-                        <input type="text" class="form-control form-control-sm mt-1 mb-1" id="formGroupExampleInput"
-                            placeholder="NAME">
-                    </div>
-                    <div class="email">
-                        <input type="text" class="form-control form-control-sm mt-1" id="formGroupExampleInput2"
-                            placeholder="EMAIL">
-                    </div>
-                    <div class="phone">
-                        <div class="row">
-                            <div class="col">
-                                <input type="text" class="form-control form-control-sm mt-1 mb-1" placeholder="PHONE">
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control form-control-sm mt-1 mb-1" placeholder="EXT.">
+        <section class="container-fluid form-section pb-4 pt-5">
+            <div class="row">
+                <div class="col-12 col-sm-3">
+                    <h6 class="text-white pl-3">SUBTLE HEADING</h6>
+                    <form class="form border p-3 bg-white">
+                        <div class="name bg-white">
+                            <label class="text-theme">LESS SUBTLE HEADING</Label>
+                            <input type="text" class="form-control form-control-sm mt-1 mb-1" id="formGroupExampleInput"
+                                placeholder="NAME">
+                        </div>
+                        <div class="email">
+                            <input type="text" class="form-control form-control-sm mt-1" id="formGroupExampleInput2"
+                                placeholder="EMAIL">
+                        </div>
+                        <div class="phone">
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control form-control-sm mt-1 mb-1"
+                                        placeholder="PHONE">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control form-control-sm mt-1 mb-1"
+                                        placeholder="EXT.">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="message">
-                        <textarea class="form-control text-dark" placeholder="MESSAGE" id="exampleFormControlTextarea1"
-                            rows="5">
+                        <div class="message">
+                            <textarea class="form-control text-dark" placeholder="MESSAGE"
+                                id="exampleFormControlTextarea1" rows="5">
                             </textarea>
-                    </div>
-                    <div class="d-flex m-2"><input type="checkbox" checked>
-                        <p class="check-text mt-1 ml-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Exercitationem rem eveniet at</p>
-                    </div>
-                    <button type="button" class="btn btn-light text-theme">SUBMIT</button>
-                </form>
-                <div class="col-7 text-white d-flex align-items-center justify-content-center">
+                        </div>
+                        <div class="d-flex m-2"><input type="checkbox" checked>
+                            <p class="check-text mt-1 ml-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Exercitationem rem eveniet at</p>
+                        </div>
+                        <button type="button" class="btn btn-light text-theme">SUBMIT</button>
+                    </form>
+                </div>
+                <div class="col-9 text-white">
                     <div class=" form-text-area w-75 d-none d-sm-block pl-5">
                         <h4 class="mt-0">TEXT OVER AN IMAGE</h4>
                         <p class="mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime ipsum,
@@ -65,29 +85,41 @@
                 </div>
             </div>
         </section>
-        <section class="container-fluid intro">
+        <section class="container-fluid top">
             <div class="row d-flex bg-theme">
                 <div class="col 12 col-sm-5 order-2 order-sm-1 text-white p-5">
-                    <h3>INDISCRIPT HEADER THAT IS LONG ENOUGH TO WRAP</h3>
+                    <h3>INDESCRIPT HEADER THAT IS LONGER</h3>
+                    <h3>INDESCRIPT HEADER</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod eaque tempore dicta cupiditate
                         veniam accusamus explicabo, earum in laborum, modi provident adipisci obcaecati magni recusandae
                         iure magnam fugit ratione sit eum nostrum aut error natus. Dolores et nesciunt odit ab.</p>
                 </div>
                 <div class="col-12 col-sm-7 order-1 order-sm-2">
-                    <div class="card mt-3 cta-card p-3 d-flex justify-content-around">
-                        <div>
-                            <p class="large mdi mdi-wrench"> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    <div class="card mt-4 cta-card p-3">
+                        <div class="card-children ml-3 mr-5">
+                            <p class="mt-3 mb-5 text-grey"><span class="mdi mdi-wrench text-theme"></span> Lorem ipsum
+                                dolor, si
+                                amet consectetur adipisicing elit.
                             </p>
-                            <p class="large mdi mdi-car"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <p class="mt-5 mb-5text-grey"><span class="mdi mdi-car text-theme"></span> Lorem ipsum dolor
+                                sit
+                                amet consectetur adipisicing elit.
                             </p>
-                            <p class="large mdi mdi-phone-in-talk-outline"> Lorem ipsum dolor sit amet, consectetur
+                            <p class="mt-5 mb-5text-grey"><span class="mdi mdi-phone-in-talk-outline text-theme"></span>
+                                Lorem ipsum dolor sit amet, consectetur
                                 adipisicing
                                 elit.
                             </p>
-                            <p class="large mdi mdi-google-circles-communities"> Lorem ipsum dolor sit amet, consectetur
+                            <p class="mt-5 mb-5text-grey"><span
+                                    class="mdi mdi-google-circles-communities text-theme"></span>
+                                Lorem ipsum dolor sit amet,
+                                consectetur
                                 adipisicing elit.
                             </p>
-                            <p class="large mdi mdi-lightning-bolt"> Lorem ipsum dolor sit amet, consectetur adipisicing
+                            <p class="mt-5 mb-3text-grey"><span class="mdi mdi-lightning-bolt text-theme"></span> Lorem
+                                ipsum
+                                dolor sit amet, consectetur
+                                adipisicing
                                 elit.
                             </p>
                         </div>
@@ -95,39 +127,95 @@
                 </div>
 
         </section>
-        <section class="container-certifications">
+        <section class="container-fluid content">
             <div class="row">
-                <div class="col-4">
-                    <img src="https://cdn.shopify.com/s/files/1/1148/9974/products/s_dynamicrugs-posh-7806-719.jpg?v=1575942786"
-                        alt="" class="m-5" height="500" width="250">
+                <div class="col-12 col-md-4">
+                    <!-- <img src="https://cdn.shopify.com/s/files/1/1148/9974/products/s_dynamicrugs-posh-7806-719.jpg?v=1575942786"
+                        alt="" class="m-5" height="500" width="250"> -->
+                    <iframe class="ml-3 mt-3" width="300" height="500" src="https://www.youtube.com/embed/u3zB4pAlmYA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
-                <div class="col-8">
-
+                <div class="col-12 col-md-8">
+                    <div class="text-grey content-writing d-flex flex-column">
+                        <h2><span class="mdi mdi-shield-check text-theme"></span>INDESCRIPT HEADER</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae quos nam temporibus et
+                            molestiae nemo qui eligendi, iste necessitatibus eos. Unde distinctio modi minus explicabo
+                            quia natus. Et, quo dolore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
+                            ipsam. Possimus amet voluptate illo, illum vel laborum? Assumenda voluptatem eveniet
+                            voluptate hic placeat, ullam, explicabo sed quas doloremque asperiores itaque provident
+                            labore libero! Cumque autem amet minus nisi consequatur distinctio!
+                        </p>
+                        <button type="button" class="btn btn-theme text-white w-25 align-self-end m-4">MORE
+                        </button>
+                    </div>
                 </div>
             </div>
 
         </section>
-        <section class="container reviews">
-
-        </section>
-        <section class="container follow-up">
-
+        <section class="container-fluid testimonials bg-grey p-5">
+            <div class="row d-flex align-items-center">
+                <div class="col-12 col-sm-4 order-2 order-sm-1 mt-4">
+                    <div class="card text-center text-grey mb-3 d-flex-column mx-auto" style="max-width: 18rem;">
+                        <div class="card-body">
+                            <p class="card-testimonial">"testimonial"</p>
+                            <img class="customer-img m-3"
+                                src="https://esquimaltmfrc.com/wp-content/uploads/2015/09/flat-faces-icons-circle-man-9.png"
+                                alt="customer image">
+                            <p class="cust-info">"Name"-"Proffession"-"Location"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 order-1 order-sm-2 mt-4">
+                    <div class="card text-center text-grey mb-3 d-flex-column mx-auto" style="max-width: 18rem;">
+                        <div class="card-body">
+                            <h1 class="text-theme"><span class="mdi mdi-star-circle m-1"></span><span
+                                    class="mdi mdi-star-circle m-1"></span><span class="mdi mdi-star-circle m-1"></span>
+                            </h1>
+                            <p class="card-testimonial">"testimonial"</p>
+                            <img class="customer-img m-3"
+                                src="https://esquimaltmfrc.com/wp-content/uploads/2015/09/flat-faces-icons-circle-man-9.png"
+                                alt="customer image">
+                            <p class="cust-info">"Name"-"Proffession"-"Location"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 order-3 mt-4">
+                    <div class="card text-center text-grey mb-3 d-flex-column mx-auto" style="max-width: 18rem;">
+                        <div class="card-body">
+                            <p class="card-testimonial">"testimonial"</p>
+                            <img class="customer-img m-3"
+                                src="https://esquimaltmfrc.com/wp-content/uploads/2015/09/flat-faces-icons-circle-man-9.png"
+                                alt="customer image">
+                            <p class="cust-info">"Name"-"Proffession"-"Location"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <div>
-
+    <footer class="container-fluid">
+        <div class="row bg-theme text-white p-5">
+            <h2>Indescript footer text and hopefully not a literal white box</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores sit laudantium excepturi dolorem
+                possimus? Ipsa dolorum fugit natus ad id?</p>
+        </div>
+        <div class="row display-center text-center bg-white text-theme pt-5 pb-5">
+            <div class="green-box text-white">Im going to make this one a literal green box...</div>
         </div>
     </footer>
-
-
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
+    <script>
+        function scrollWin(xpos, ypos) {
+            window.scrollTo(xpos, ypos);
+        }
+    </script>
 </body>
 
 </html>

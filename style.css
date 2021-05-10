@@ -3,12 +3,30 @@
 }
 body{
     font-family: 'Open Sans', sans-serif;
+    height:4000px;
 }
 .bg-theme{
     background-color:#308e46;
+    animation-name: swip-swop;
+    animation-duration: 15s;
+    animation-delay: 10s;
+    animation-iteration-count: 2;
+}
+.bg-grey{
+    background-color: rgb(218, 221, 218);
+}
+.btn-theme{
+    background-color:#308e46;
+    animation-name: swip-swop;
+    animation-duration: 15s;
+    animation-delay: 10s;
+    animation-iteration-count: 2;
 }
 .text-theme{
     color:#308e46;
+}
+.text-grey{
+    color: rgb(112, 109, 109);
 }
 header{
     align-items: center;
@@ -18,29 +36,59 @@ header{
     font-size: larger;
 }
 .form{
-    width: 300px;
+    width: 90%;
+    margin: auto;
+}
+.customer-img{
+    height: 5rem;
+    width: 5rem;   
 }
 .form-section{
-    background-image:url(https://videohive.img.customer.envatousercontent.com/files/150469715/sightsignal-dynamicdarkcrystalsloop1IMG.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=ab141b41dfd97d47ee349da7efecf5bc);
+    object-fit: cover;
+    background-image:url(https://i.pinimg.com/originals/f1/32/15/f13215a3276ab6f25339d39221caa4aa.jpg);
 }
 .check-text{
     font-size: 8pt;
 }
 .form-text-area{
     border-left:6px solid #308e46;
-}
-.card{
-    height: 400px;
-    width: 90%;
-    margin:auto;
+    margin-left: 8rem;
+    margin-top: 5rem;
 }
 .cta-card{
     position: absolute;
-    top: 20px;
+    font-size: 16pt;
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 380px) {
     .cta-card {
         position: relative;
         margin:auto;
+        font-size: 10pt;
     }
+}
+.content-writing{
+    margin-top: 15rem;
+    margin-right: 7rem;
+}
+@media screen and (max-width: 380px) {
+    .content-writing {
+        margin:auto;
+    }
+}
+@keyframes swip-swop{
+    from{background-color:#308e46 ;}
+    to{background-color: hotpink;}
+}
+.green-box{
+    height: 1.5rem;
+    width: 80%;
+    margin: auto;
+    background-color:#308e46;
+    animation-name: swip-swop;
+    animation-duration: 15s;
+    animation-delay: 10s;
+    animation-iteration-count: 2;
+}
+.btn-right{
+    text-align: right;
 }
