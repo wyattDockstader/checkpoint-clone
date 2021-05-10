@@ -1,37 +1,25 @@
 :root{
     --theme:#308e46;
-    animation-name: swip-swop-text;
-    animation-duration: 15s;
+    animation-name: swip-swop-theme;
+    animation-duration: 25s;
     animation-delay: 10s;
-    animation-iteration-count: 2;
+    animation-iteration-count: 4;
 }
 body{
     font-family: 'Open Sans', sans-serif;
     height:4000px;
 }
 .bg-theme{
-    background-color:#308e46;
-    animation-name: swip-swop-background;
-    animation-duration: 15s;
-    animation-delay: 10s;
-    animation-iteration-count: 2;
+    background-color:var(--theme);
 }
 .bg-grey{
     background-color: rgb(218, 221, 218);
 }
 .btn-theme{
-    background-color:#308e46;
-    animation-name: swip-swop-background;
-    animation-duration: 15s;
-    animation-delay: 10s;
-    animation-iteration-count: 2;
+    background-color:var(--theme);
 }
 .text-theme{
-    color:#308e46;
-    animation-name: swip-swop-text;
-    animation-duration: 15s;
-    animation-delay: 10s;
-    animation-iteration-count: 2;
+    color:var(--theme);
 }
 .text-grey{
     color: rgb(112, 109, 109);
@@ -59,7 +47,7 @@ header{
     font-size: 8pt;
 }
 .form-text-area{
-    border-left:6px solid #308e46;
+    border-left:6px solid var(--theme);
     margin-left: 8rem;
     margin-top: 5rem;
 }
@@ -91,15 +79,15 @@ header{
     from{color:#308e46 ;}
     to{color: hotpink;}
 }
+@keyframes swip-swop-theme{
+    from{--theme:#308e46 ;}
+    to{--theme: hotpink;}
+}
 .green-box{
     height: 1.5rem;
     width: 80%;
     margin: auto;
-    background-color:#308e46;
-    animation-name: swip-swop;
-    animation-duration: 15s;
-    animation-delay: 10s;
-    animation-iteration-count: 2;
+    background-color:var(--theme);
 }
 .btn-right{
     text-align: right;
