@@ -59,7 +59,7 @@ header{
     position: absolute;
     font-size: 16pt;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 576px) {
     .cta-card {
         position: relative;
         margin:auto;
@@ -70,7 +70,7 @@ header{
     margin-top: 15rem;
     margin-right: 7rem;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 576px) {
     .content-writing {
         margin:auto;
     }
